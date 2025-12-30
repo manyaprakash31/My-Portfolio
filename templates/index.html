@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manya Prakash | Portfolio</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero-modern">
+  <div class="hero-left">
+    <h1>Hi, I'm <span>Manya</span></h1>
+    <h2>AI & Data Science <span class="highlight">Student</span></h2>
+
+    <p>
+      I build intelligent, scalable, and real-world AI-powered web applications
+      using modern technologies, clean architecture principles, and advanced
+      Generative AI tools to solve practical problems and deliver impactful
+      user experiences.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#resume" class="btn-outline">View Resume</a>
+      <a href="#contact" class="btn-outline">Contact Me</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="image-glow">
+      <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="profile">
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+  <h2>About Me</h2>
+  <p>
+    I am a final-year B.Tech student specializing in Artificial Intelligence and
+    Data Science with strong hands-on experience in Python, Django, Flask,
+    and modern AI technologies. I enjoy building scalable, user-focused
+    applications that solve real-world problems.
+    <br><br>
+    My work spans full-stack development, AI-powered dashboards, computer
+    vision systems, and GenAI-based code analysis platforms. I am passionate
+    about writing clean, maintainable code and continuously improving my
+    technical and problem-solving skills.
+    <br><br>
+    Currently, I am seeking entry-level software engineering or AI-focused
+    roles where I can contribute meaningfully and grow as a professional.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section class="section dark">
+  <h2>Tech Stack</h2>
+  <div class="skills">
+    <span>Python</span>
+    <span>Django</span>
+    <span>Flask</span>
+    <span>GenAI</span>
+    <span>LangChain</span>
+    <span>MySQL</span>
+    <span>MongoDB</span>
+    <span>Git</span>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <h2>Projects</h2>
+
+  <div class="project-card">
+    <h3>CodeXray – GenAI Code Analyzer</h3>
+    <p>
+      Full-stack GenAI-powered platform to analyze GitHub repositories,
+      detect bugs, summarize code, and provide real-time explanations
+      using an AI chatbot with local LLMs.
+    </p>
+    <p><b>Tech:</b> Python, Django, LangChain, Ollama, GitHub API</p>
+    <a href="https://github.com/manyaprakash31/CodeXray" target="_blank">View on GitHub</a>
+  </div>
+
+  <div class="project-card">
+    <h3>InsightGenie – AI Data Analysis Dashboard</h3>
+    <p>
+      Web-based analytics dashboard enabling CSV uploads, interactive
+      charts, and natural language data querying using LLMs.
+    </p>
+    <p><b>Tech:</b> Django, Pandas, Plotly, Bootstrap</p>
+    <a href="https://github.com/manyaprakash31" target="_blank">View on GitHub</a>
+  </div>
+
+  <div class="project-card">
+    <h3>Distracted Driver Detection System</h3>
+    <p>
+      Computer vision project to detect distracted driving behaviors
+      using CNNs, achieving ~80% classification accuracy.
+    </p>
+    <p><b>Tech:</b> Python, CNN, OpenCV, NumPy</p>
+    <a href="https://github.com/manyaprakash31/Distracted-Driver-Detection" target="_blank">View on GitHub</a>
+  </div>
+
+  <div class="project-card">
+    <h3>GitHub Profile Analyzer</h3>
+    <p>
+      Flask-based application to analyze GitHub profiles and repositories,
+      extracting insights like language usage and repo statistics.
+    </p>
+    <p><b>Tech:</b> Python, Flask, GitHub API</p>
+    <a href="https://github.com/manyaprakash31/Github-Profile-Analyzer" target="_blank">View on GitHub</a>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section class="section dark" id="resume">
+  <h2>Resume</h2>
+  <p>
+    I maintain role-specific resumes to align better with different job
+    requirements. Please select the resume that best matches the role.
+  </p>
+
+  <div class="project-card">
+    <h3>Software / Full Stack Developer Resume</h3>
+    <p>
+      Focused on backend development, APIs, full-stack projects,
+      and AI-powered applications.
+    </p>
+    <a href="{{ url_for('static', filename='resume/Manya FullSTack-1.pdf') }}" target="_blank">View</a>
+    <a href="{{ url_for('static', filename='resume/Manya FullSTack-1.pdf') }}" download>Download</a>
+  </div>
+
+  <div class="project-card">
+    <h3>Data Science / AI Resume</h3>
+    <p>
+      Focused on data analysis, machine learning, computer vision,
+      and AI-driven insights.
+    </p>
+    <a href="{{ url_for('static', filename='resume/Manya DATASCIENCE.pdf') }}" target="_blank">View</a>
+    <a href="{{ url_for('static', filename='resume/Manya DATASCIENCE.pdf') }}" download>Download</a>
+  </div>
+</section>
+<!-- CONTACT -->
+<section class="section contact-center" id="contact">
+  <h2>Get In Touch</h2>
+
+  <p class="contact-text">
+    Feel free to reach out for opportunities, collaborations, or just to say hello.
+  </p>
+
+  <div class="contact">
+    <a href="mailto:manyaprakash31@gmail.com">
+      <i class="fa-solid fa-envelope"></i> Email
+    </a>
+
+    <a href="https://linkedin.com/in/manya-prakash-0776262b7" target="_blank">
+      <i class="fa-brands fa-linkedin"></i> LinkedIn
+    </a>
+
+    <a href="https://github.com/manyaprakash31" target="_blank">
+      <i class="fa-brands fa-github"></i> GitHub
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 2025 Manya Prakash
+</footer>
+
+</body>
+</html>
